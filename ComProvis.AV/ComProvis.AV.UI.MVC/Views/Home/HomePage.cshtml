@@ -1,0 +1,87 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model ComProvis.AV.UI.Models.HomeModel
+@{
+    ViewData["Title"] = "Cloud Antivirus";
+}
+
+
+
+<div class="row">
+    <h2 class="col-sm-3">@Localizer["HomePage"]</h2>
+   
+    <a style="    border: 1px solid #337ab7;
+    border-radius: 25px;
+    margin-top: 19px;
+
+    margin-right: 14px;" class="myLink col-sm-2 pull-right btn btn-outline-primary " href="#">@Localizer["Download"]</a>
+
+  
+
+</div>
+<div class="jumbotron">
+    <h1 class="display-4">@Localizer["Wellcome"]</h1>
+    <hr class="my-4">
+    @if (Model.IsAdmin)
+    {
+        <p>@Localizer["Head"]</p>
+    }
+    <input type="hidden" value="@Model.fullName" id="model_fullname" />
+    <input type="hidden" value="@Model.clientUrl" id="model_clientUrl" />
+    <input type="hidden" value="@Model.ssoId" id="model_ssoId" />
+    <input type="hidden" value="@Model.Token" id="model_token" />
+    <input type="hidden" value="@Model.Culture" id="culture" />
+    @if (Model.IsAdmin)
+    {
+        <p class="lead">
+            <a style="border: 1px solid #337ab7;
+    border-radius: 25px; margin-top: 10px;
+" class="btn btn-outline-primary " href="@Url.Action("Login",new{ssoId=Model.ssoId, token =Model.Token})" target="_blank" role="button">@Localizer["Start"]</a>
+</p>}
+
+</div>
+@if (Model.IsAdmin)
+{
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">@Model.monthlyLicenses</h1>
+                    <p class="lead">@Localizer["MonthLicence"]</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">@Model.selfServiceLicenses</h1>
+                    <p class="lead">@Localizer["SelfService"]</p>
+                </div>
+            </div>
+        </div>
+    </div>}
+
+<script>
+    window.onload = function () {
+       // $("#userName").text($("#model_fullname").val());
+        $("#userNameBar").text($("#model_fullname").val());
+        /**/
+     
+        $("#homeLink").attr("href", "@Url.Action("HomePage","Home")" + '?ssoID=' + $("#model_ssoId").val() + '&token=' + $("#model_token").val() + '&culture=hr-HR');
+        $("#mkpLink").attr("href", $("#model_clientUrl").val());
+        //vrati ui na publish
+        $("#hr").attr("href",  "@Url.Action("HomePage","Home")"+ '?ssoId=' + $("#model_ssoId").val() + '&token=' + $("#model_token").val()+'&culture=hr-HR');
+        $("#en").attr("href",  "@Url.Action("HomePage","Home")"+ '?ssoId=' + $("#model_ssoId").val() + '&token=' + $("#model_token").val() + '&culture=en-US');
+
+        $("#helpLink").attr("href", "@Url.Action("About","Home")" + '?ssoID=' + $("#model_ssoId").val() + '&token=' + $("#model_token").val() + '&culture=' + $("#culture").val());
+        /**/
+    };
+/*setTimeout(function () {
+    document.getElementById("userName");
+
+
+ }, 1);*/
+
+</script>
+

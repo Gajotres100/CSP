@@ -1,0 +1,29 @@
+﻿@model ComProvis.AV.UI.MVC.Models.TrendMicroLoginModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form id="login_form" action="@Model.PostPage" method="POST">
+            <input type="hidden" name="username" value="@Model.username" />
+            <input type="hidden" name="password" value="@Model.password" />
+            <input name="AuthState" type="hidden" id="AuthState" value="@Model.AuthState" />
+            <input type="hidden" class="cbox_remember" id="cbox_remember" name="chk_remember_me" value="1" checked tabindex="4" />
+            <input name="JSpoint" type="hidden" id="JSpoint" value="on">
+        </form>
+    </div>
+</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            document.getElementById("login_form").submit();
+        });
+</script>
+
+
+

@@ -1,0 +1,41 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model ComProvis.AV.UI.Models.HelpModel
+@{
+    ViewData["Title"] = "Cloud Antivirus";
+}
+
+
+<div class="row">
+    <input type="hidden" value="@Model.Fulluser" id="model_fullname" />
+    <input type="hidden" value="@Model.ssoId" id="model_ssoId" />
+    <input type="hidden" value="@Model.token" id="model_token" />
+    <input type="hidden" value="@Model.Culture" id="culture" />
+    <input type="hidden" value="@Model.clientUrl" id="model_clientUrl" />
+    <h2 class="col-sm-3">@Localizer["Help"]</h2>
+    <a style="    border: 1px solid #337ab7;
+    border-radius: 25px;
+    margin-top: 19px;
+    margin-right: 14px;" class="col-sm-2 pull-right btn btn-outline-primary " href="@Url.Action("Home")">@Localizer["HomePage"]</a>
+</div>
+
+<div class="row col-sm-12">
+    @Localizer["HelpContent"]
+</div>
+
+
+    <script>
+        window.onload = function () {
+            $("#hr").attr("href",  "@Url.Action("About","Home")"+ '?ssoID=' + $("#model_ssoId").val() + '&token=' + $("#model_token").val() + '&culture=hr-HR');
+            $("#en").attr("href",  "@Url.Action("About", "Home")"+ '?ssoID=' + $("#model_ssoId").val() + '&token=' + $("#model_token").val() + '&culture=en-US');
+            $("#homeLink").attr("href", "@Url.Action("HomePage","Home")" + '?ssoID=' + $("#model_ssoId").val() + '&token=' + $("#model_token").val() + '&culture=' + $("#culture").val());
+            $("#helpLink").attr("href", "@Url.Action("About", "Home")" + '?ssoID=' + $("#model_ssoId").val() + '&token=' + $("#model_token").val() + '&culture=' + $("#culture").val());
+            $("#mkpLink").attr("href", $("#model_clientUrl").val());
+
+            //  $("#userName").text($("#model_fullname").val());
+            $("#userNameBar").text($("#model_fullname").val());
+
+        };
+
+
+    </script>

@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComProvis.AV", "ComProvis.AV\ComProvis.AV.csproj", "{7783B898-F19D-45E2-8E38-E83FAD1533F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComProvis.AV.Core", "ComProvis.AV.Core\ComProvis.AV.Core.csproj", "{E81BDAC9-7E4C-4827-B3F3-595FACE6A3D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComProvis.AV.Data", "ComProvis.AV.Data\ComProvis.AV.Data.csproj", "{9A6FA6FF-2367-43FD-B5C7-9D0C08CEF532}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComProvis.AV.Services", "ComProvis.AV.Services\ComProvis.AV.Services.csproj", "{18015FC3-1F82-4429-8D04-642C28B68FA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComProvis.AV.Params", "ComProvis.AV.Params\ComProvis.AV.Params.csproj", "{DF0B58D4-2A7D-4996-BBC0-5F89589447C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComProvis.AV.Integration", "ComProvis.AV.Integration\ComProvis.AV.Integration.csproj", "{B13CBD4A-43A1-4DE3-91DD-353AA7F47F29}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComProvis.AV.UI.API", "ComProvis.AV.UI\ComProvis.AV.UI.API.csproj", "{8290A718-5C52-4C87-A1FE-3F7AF6B052D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComProvis.AV.ViewModel", "ComProvis.AV.ViewModel\ComProvis.AV.ViewModel.csproj", "{D3029B39-F38C-44F2-AEBB-C0ABAAFBF381}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComProvis.AV.Enums", "ComProvis.AV.Enums\ComProvis.AV.Enums.csproj", "{D5EE0A42-9B84-43F9-8F68-D22864559A6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComProvis.AV.UI", "ComProvis.AV.UI.MVC\ComProvis.AV.UI.csproj", "{021B47C0-A12D-4EA8-8AF9-71C60DF1DF8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7783B898-F19D-45E2-8E38-E83FAD1533F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7783B898-F19D-45E2-8E38-E83FAD1533F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7783B898-F19D-45E2-8E38-E83FAD1533F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7783B898-F19D-45E2-8E38-E83FAD1533F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E81BDAC9-7E4C-4827-B3F3-595FACE6A3D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E81BDAC9-7E4C-4827-B3F3-595FACE6A3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E81BDAC9-7E4C-4827-B3F3-595FACE6A3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E81BDAC9-7E4C-4827-B3F3-595FACE6A3D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6FA6FF-2367-43FD-B5C7-9D0C08CEF532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6FA6FF-2367-43FD-B5C7-9D0C08CEF532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6FA6FF-2367-43FD-B5C7-9D0C08CEF532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6FA6FF-2367-43FD-B5C7-9D0C08CEF532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18015FC3-1F82-4429-8D04-642C28B68FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18015FC3-1F82-4429-8D04-642C28B68FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18015FC3-1F82-4429-8D04-642C28B68FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18015FC3-1F82-4429-8D04-642C28B68FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0B58D4-2A7D-4996-BBC0-5F89589447C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0B58D4-2A7D-4996-BBC0-5F89589447C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0B58D4-2A7D-4996-BBC0-5F89589447C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0B58D4-2A7D-4996-BBC0-5F89589447C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B13CBD4A-43A1-4DE3-91DD-353AA7F47F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B13CBD4A-43A1-4DE3-91DD-353AA7F47F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B13CBD4A-43A1-4DE3-91DD-353AA7F47F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B13CBD4A-43A1-4DE3-91DD-353AA7F47F29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8290A718-5C52-4C87-A1FE-3F7AF6B052D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8290A718-5C52-4C87-A1FE-3F7AF6B052D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8290A718-5C52-4C87-A1FE-3F7AF6B052D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8290A718-5C52-4C87-A1FE-3F7AF6B052D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3029B39-F38C-44F2-AEBB-C0ABAAFBF381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3029B39-F38C-44F2-AEBB-C0ABAAFBF381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3029B39-F38C-44F2-AEBB-C0ABAAFBF381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3029B39-F38C-44F2-AEBB-C0ABAAFBF381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5EE0A42-9B84-43F9-8F68-D22864559A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EE0A42-9B84-43F9-8F68-D22864559A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5EE0A42-9B84-43F9-8F68-D22864559A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5EE0A42-9B84-43F9-8F68-D22864559A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{021B47C0-A12D-4EA8-8AF9-71C60DF1DF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{021B47C0-A12D-4EA8-8AF9-71C60DF1DF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{021B47C0-A12D-4EA8-8AF9-71C60DF1DF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{021B47C0-A12D-4EA8-8AF9-71C60DF1DF8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B7957C7-A3DC-4C80-A024-57D26AA11DDE}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://13.93.9.35:8080/tfs/comprovis
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ComProvis.AV\\ComProvis.AV.csproj
+		SccProjectName1 = ComProvis.AV
+		SccLocalPath1 = ComProvis.AV
+		SccProjectUniqueName2 = ComProvis.AV.Core\\ComProvis.AV.Core.csproj
+		SccProjectName2 = ComProvis.AV.Core
+		SccLocalPath2 = ComProvis.AV.Core
+		SccProjectUniqueName3 = ComProvis.AV.Data\\ComProvis.AV.Data.csproj
+		SccProjectName3 = ComProvis.AV.Data
+		SccLocalPath3 = ComProvis.AV.Data
+		SccProjectUniqueName4 = ComProvis.AV.Services\\ComProvis.AV.Services.csproj
+		SccProjectName4 = ComProvis.AV.Services
+		SccLocalPath4 = ComProvis.AV.Services
+		SccProjectUniqueName5 = ComProvis.AV.Params\\ComProvis.AV.Params.csproj
+		SccProjectName5 = ComProvis.AV.Params
+		SccLocalPath5 = ComProvis.AV.Params
+		SccProjectUniqueName6 = ComProvis.AV.Integration\\ComProvis.AV.Integration.csproj
+		SccProjectName6 = ComProvis.AV.Integration
+		SccLocalPath6 = ComProvis.AV.Integration
+		SccProjectUniqueName7 = ComProvis.AV.ViewModel\\ComProvis.AV.ViewModel.csproj
+		SccProjectName7 = ComProvis.AV.ViewModel
+		SccLocalPath7 = ComProvis.AV.ViewModel
+		SccProjectUniqueName8 = ComProvis.AV.Enums\\ComProvis.AV.Enums.csproj
+		SccProjectName8 = ComProvis.AV.Enums
+		SccLocalPath8 = ComProvis.AV.Enums
+		SccProjectUniqueName9 = ComProvis.AV.UI\\ComProvis.AV.UI.API.csproj
+		SccProjectName9 = ComProvis.AV.UI
+		SccLocalPath9 = ComProvis.AV.UI
+		SccProjectUniqueName10 = ComProvis.AV.UI.MVC\\ComProvis.AV.UI.csproj
+		SccProjectName10 = ComProvis.AV.UI.MVC
+		SccLocalPath10 = ComProvis.AV.UI.MVC
+	EndGlobalSection
+EndGlobal

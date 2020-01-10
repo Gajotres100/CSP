@@ -1,0 +1,200 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration _configuration
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/simple-sidebar.css" />
+
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/simple-sidebar.min.css" asp-append-version="true" />
+    </environment>
+</head>
+
+<body>
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="hep-logo">
+                <a href="@_configuration["AvHome"]"><img src="~/images/logo.png" /></a>
+            </div>
+
+            @*<div class="profile-usertitle">
+                    <div class="profile-usertitle-name" id="userName">
+
+                    </div>
+                    <div class="profile-usertitle-job">
+                        Korisnik
+                    </div>
+                </div>*@
+            <ul class="sidebar-nav">
+
+
+                <li>
+                    <a href="#" id="homeLink"><span style="margin-left:-20px;" class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;@Localizer["HomePage"]</a>
+                </li>
+                <li>
+                    <a href="#" id="link" class="myLink"><span style="margin-left:-20px;" class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;@Localizer["Download"]</a>
+                </li>
+                <li>
+                    <a id="helpLink" asp-area="" asp-controller="Home" asp-action="About"><span style="margin-left:-20px;" class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;@Localizer["Help"]</a>
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Logout"><span style="margin-left:-20px;" class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;@Localizer["LogOut"]</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="home-top-bar row">
+                    <div class="user_bar pull-right">
+
+                        <span style="color:white; padding-right:20px;" id="userNameBar"></span>
+                        <span style="padding-left:30px;">
+                            <a href="#" id="mkpLink" target="_blank"><span style="margin-left:-20px; text-decoration:none" class="glyphicon glyphicon-shopping-cart"></span>&nbsp;&nbsp;Marketplace</a>
+
+                        </span>
+                        <span style="padding-left:30px;">
+
+                            <a asp-area="" asp-controller="Home" asp-action="Logout"><span style="margin-left:-20px;" class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;@Localizer["LogOut"]</a>
+                        </span>
+
+                    </div>
+
+                    <div class="lang_select pull-right">
+                        <ul>
+                            <li><a id="hr" href="#"><img src="~/images/hr.png" /></a></li>
+                            <li><a id="en" href="#"><img src="~/images/us.png" /></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                @RenderBody()
+
+
+            </div>
+        </div>
+
+        <!--Modal for download link-->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background:#0679ae;">
+                        <h3 class="modal-title" style="color:#fff" id="exampleModalLongTitle"> @Localizer["Error"]</h3>
+
+                    </div>
+                    <div class="modal-body">
+                        <h3>@Localizer["ErrorMessage"]</h3>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> @Localizer["Close"]</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="col-sm-12" style="text-align: center;margin-left: -100px;">
+                COPYRIGHT © 2000 - 2019 HEP-Telekomunikacije d.o.o.. SVA PRAVA PRIDRŽANA //
+            </div>
+        </footer>
+
+    </div>
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+
+
+    <script type="text/javascript">
+
+        //link
+
+        $(".myLink").click(function (e) {
+
+        /* do the AJAX call requesting for the authorize URL */
+            var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+            if (isChrome) {
+
+                var width = window.innerWidth;
+                var height = window.innerHeight;
+
+                authWindow = window.open('about:blank', '_blank', 'left=1,top=1,width = 1, height = 1,toolbar=yes,resizable=1,menubar=yes,status=yes');
+                authWindow.moveTo(0, 0);
+            }
+
+           $.ajax({
+                url: "@Url.Action("Download","Home")" + "?ssoId=" + $("#model_ssoId").val() + "&token=" + $("#model_token").val(),
+                type: "GET",
+                //async: false,
+                success: function (result) {
+                    //alert(result);
+                    if ((result == "") || (result == "#")) {
+                        if (isChrome) {
+                            authWindow.close();
+                        }
+                        $("#myModal").modal();
+
+                    }
+                    else {
+                        console.log(result);
+                        if (isChrome) {
+                            authWindow.location.replace(result);
+                            authWindow.resizeTo(width,height);
+                        }
+                        else
+                            window.open(result, "_blank");
+                    }
+                }
+
+            });
+
+
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>

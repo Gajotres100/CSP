@@ -1,0 +1,13 @@
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\bin\Debug\netcoreapp2.0\ComProvis.AV.Integration.deps.json
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\bin\Debug\netcoreapp2.0\ComProvis.AV.Integration.dll
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\bin\Debug\netcoreapp2.0\ComProvis.AV.Integration.pdb
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\bin\Debug\netcoreapp2.0\ComProvis.AV.Core.dll
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\bin\Debug\netcoreapp2.0\ComProvis.AV.Params.dll
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\bin\Debug\netcoreapp2.0\ComProvis.AV.Params.pdb
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\bin\Debug\netcoreapp2.0\ComProvis.AV.Core.pdb
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\obj\Debug\netcoreapp2.0\ComProvis.AV.Integration.csprojAssemblyReference.cache
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\obj\Debug\netcoreapp2.0\ComProvis.AV.Integration.AssemblyInfoInputs.cache
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\obj\Debug\netcoreapp2.0\ComProvis.AV.Integration.AssemblyInfo.cs
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\obj\Debug\netcoreapp2.0\ComProvis.AV.Integration.csproj.CopyComplete
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\obj\Debug\netcoreapp2.0\ComProvis.AV.Integration.dll
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Integration\obj\Debug\netcoreapp2.0\ComProvis.AV.Integration.pdb

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ComProvis.AV.Core\ComProvis.AV.Core.csproj" />
+    <ProjectReference Include="..\ComProvis.AV.Params\ComProvis.AV.Params.csproj" />
+    <ProjectReference Include="..\ComProvis.AV.ViewModel\ComProvis.AV.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

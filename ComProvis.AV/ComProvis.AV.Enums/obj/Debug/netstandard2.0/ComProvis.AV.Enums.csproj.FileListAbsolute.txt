@@ -1,0 +1,8 @@
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Enums\bin\Debug\netstandard2.0\ComProvis.AV.Enums.deps.json
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Enums\bin\Debug\netstandard2.0\ComProvis.AV.Enums.dll
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Enums\bin\Debug\netstandard2.0\ComProvis.AV.Enums.pdb
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Enums\obj\Debug\netstandard2.0\ComProvis.AV.Enums.csprojAssemblyReference.cache
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Enums\obj\Debug\netstandard2.0\ComProvis.AV.Enums.AssemblyInfoInputs.cache
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Enums\obj\Debug\netstandard2.0\ComProvis.AV.Enums.AssemblyInfo.cs
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Enums\obj\Debug\netstandard2.0\ComProvis.AV.Enums.dll
+C:\DevingStuff\Tfs-ComProvis\ComProvis.AV\ComProvis.AV\ComProvis.AV.Enums\obj\Debug\netstandard2.0\ComProvis.AV.Enums.pdb
